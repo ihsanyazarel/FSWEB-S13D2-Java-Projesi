@@ -11,6 +11,7 @@ public class Main {
         System.out.println("isPerfectNumber(5)= " + isPerfectNumber(5));
         System.out.println("isPerfectNumber(-1)= " + isPerfectNumber(-1));
         System.out.println("isPerfectNumber(496)= " + isPerfectNumber(496));
+        System.out.println("isPerfectNumber(0)= " + isPerfectNumber(0));
 
         System.out.println("-------------------");
 
@@ -30,7 +31,7 @@ public class Main {
         return numStr.contentEquals(reversedStr);
     }
     public static boolean isPerfectNumber(int num){
-        if (num < 0){
+        if (num <= 0){
             return false;
         }
         int sum = 0;

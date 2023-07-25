@@ -10,6 +10,7 @@ public class Main {
         System.out.println("isPerfectNumber(28)= " + isPerfectNumber(28));
         System.out.println("isPerfectNumber(5)= " + isPerfectNumber(5));
         System.out.println("isPerfectNumber(-1)= " + isPerfectNumber(-1));
+        System.out.println("isPerfectNumber(496)= " + isPerfectNumber(496));
 
         System.out.println("-------------------");
 
@@ -33,7 +34,7 @@ public class Main {
             return false;
         }
         int sum = 0;
-        for (int i = 1; i < num; i++){
+        for (int i = 1; i <= num/2; i++){
             if (num % i == 0){
                 sum += i;
             }
